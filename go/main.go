@@ -15,16 +15,14 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>
  */
 
-unsafe extern "C" {
-    fn HelloFromGo();
-    fn square(x: i32) -> i32;
+package main
+
+import "C"
+import "fmt"
+
+//export HelloFromGo
+func HelloFromGo() {
+    fmt.Println("test")
 }
 
-fn main() {
-    unsafe {
-        HelloFromGo();
-
-        let result = square(5);
-        println!("Test C: {}", result);
-    }
-}
+func main() {}

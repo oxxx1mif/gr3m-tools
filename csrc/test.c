@@ -15,16 +15,6 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>
  */
 
-unsafe extern "C" {
-    fn HelloFromGo();
-    fn square(x: i32) -> i32;
-}
-
-fn main() {
-    unsafe {
-        HelloFromGo();
-
-        let result = square(5);
-        println!("Test C: {}", result);
-    }
+int square(int x) {
+    return x * x;
 }
