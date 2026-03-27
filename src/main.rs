@@ -24,6 +24,8 @@ fn main() {
     unsafe {
         HelloFromGo();
 
+        gr3m_tools::init();
+
         let result = square(5);
         println!("Test C: {}", result);
     }
