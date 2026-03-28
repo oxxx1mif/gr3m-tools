@@ -15,9 +15,4 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>
  */
 
-pub mod core;
 pub mod crypto;
-
-pub fn init() {
-    println!("Init modules");
-}
